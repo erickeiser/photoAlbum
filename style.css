@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+html{
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ccc url(https://www.toptal.com/designers/subtlepatterns/patterns/purty_wood.png);
+
+  color: rgba(0,0,0,.55);
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  overflow: hidden;
+}
+
+h1{
+  text-transform: uppercase;
+  font-weight: 800;
+  text-shadow: -1px -1px rgba(0,0,0,.25);
+  font-size: 5rem;
+  margin: .25em auto 1em;
+}
+
+button{
+  display: inline-block;
+  vertical-align: middle;
+  padding: .5em 1em;
+  font-size: 1.5rem;
+  line-height: 1em;
+  background: #333333;
+  border: none;
+  color: #fff;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-weight: 500;
+  cursor: pointer;
+  outline-color: #fff;
+}
+
+.photo-album {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 70em;
+  height: 450px;
+  margin-top: 5em;
+  min-width: 800px;
+  max-width: 900px;
+}
+
+
+.polaroid {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 10px 20px 10px;
+  width: 150px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  z-index: 2;
+  font-size: 0.7em;
+  box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+  transition: all 0.5s ease-in;
+  position: absolute;
+  opacity: 0;
+  img {
+    margin: 0 0 15px;
+    width: 150px;
+    height: 150px;
+    border: none;
+    display: block;
+  }
+  &.sm {
+    width: 75px;
+    padding: 6px 6px 12px 6px;
+    font-size: 0.6em;
+    img {
+      width: 75px;
+      height: 75px;
+    }
+  }
+
+  &.md {
+    width: 150px;
+    padding: 13px 13px 26px 13px;
+    font-size: 0.8em;
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  &.lg {
+    width: 200px;
+    padding: 15px 15px 20px 15px;
+    font-size: 1em;
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
+.photo-album.run {
+  .img1 {
+    bottom: 10px;
+    right: 365px;
+    animation: animation 2s 0s 1 forwards;
+  }
+  .img2 {
+    top: 50px;
+    right: 20px;
+    animation: animation 2s .5s 1 forwards;
+  }
+  .img3 {
+    left: 400px;
+    top: 0;
+    animation: animation 2s 1s 1 forwards;
+  }
+  .img4 {
+    top: 10px;
+    left: 495px;
+    animation: animation 2s 1.5s 1 forwards;
+  }
+  .img5 {
+    bottom: 0;
+    right: 0;
+    animation: animation 2s 2s 1 forwards;
+  }
+  .img6 {
+    bottom: 36px;
+    right: 80px;
+    animation: animation 2s 2.5s 1 forwards;
+  }
+  .img7 {
+    bottom:0;
+    left:400px;
+    animation: animation 2s 3s 1 forwards;
+  }
+  .img8 {
+    bottom: -20px;
+    left: 700px;
+    animation: animation 2s 3.5s 1 forwards;
+  }
+  .img9 {
+    bottom: 0;
+    left: 0;
+    animation: animation 2s 4s 1 forwards;
+  }
+  .img10 {
+    top: 0;
+    left: 0;
+    animation: animation 2s 4.5s 1 forwards;
+  }
+  .img11 {
+    top: 0;
+    right: 0;
+    animation: animation 2s 5s 1 forwards;
+  }
+  .img12 {
+    top: 0;
+    left: 680px;
+    animation: animation 2s 5.5s 1 forwards;
+  }
+  .img13 {
+    bottom: -20px;
+    right: 630px;
+    animation: animation 2s 6s 1 forwards;
+  }
+  .img14 {
+    top: 90px;
+    left: 175px;
+    animation: animation 2s 6.5s 1 forwards;
+  }
+  .img15 {
+    left:125px;
+    top:-20px;
+    animation: animation 2s 7s 1 forwards;
+
+  }
+    .img16 {
+    left:25px;
+    top:20px;
+    animation: animation 2s 7.5s 1 forwards;
+
+  }
+    .img17 {
+    left:125px;
+    top:50px;
+    animation: animation 2s 8s 1 forwards;
+
+  }
+    .img18 {
+    left: 275px;
+    top: 20px;
+    animation: animation 2s 8.5s 1 forwards;
+
+  }
+}
+@keyframes animation {
+  0%   {
+    opacity: 0;
+    transform: rotate(-20deg) scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
+}
+
